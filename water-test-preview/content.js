@@ -9,15 +9,12 @@ window.AQUAFEEL_CONTENT = {
     { platform: "Yelp", approved: false, quote: "", author: "", sourceUrl: "" },
     { platform: "Trustpilot", approved: false, quote: "", author: "", sourceUrl: "" }
   ],
-  // "Find us online" links. A card appears only when its url is filled in (https only).
-  // Paste the Google Business Profile, Yelp and Trustpilot links here when available.
+  // "Find us online" review-site cards. Paste each profile link (https) into url to make
+  // the card clickable with a "Read our reviews" link; without a url the card still shows.
   profiles: [
-    { platform: "Google", url: "", handle: "" },
-    { platform: "Yelp", url: "", handle: "" },
-    { platform: "Trustpilot", url: "", handle: "" },
-    { platform: "Facebook", url: "https://www.facebook.com/AquafeelSolutionsAZ", handle: "@AquafeelSolutionsAZ" },
-    { platform: "Instagram", url: "https://www.instagram.com/aquafeelsolutionsaz/", handle: "@aquafeelsolutionsaz" },
-    { platform: "TikTok", url: "https://www.tiktok.com/@aquafeelsolutionsaz", handle: "@aquafeelsolutionsaz" }
+    { platform: "Google", url: "" },
+    { platform: "Yelp", url: "" },
+    { platform: "Trustpilot", url: "" }
   ],
   videos: [
     // Both videos are spoken in Spanish with captions burned into the video. Vertical 9:16 phone recordings.
