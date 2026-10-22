@@ -3,10 +3,21 @@
 window.AQUAFEEL_CONTENT = {
   reviewMode: true,
   defaultLanguage: "en",
+  // Approved review quotes only. Unapproved entries are no longer shown as "coming soon" placeholders.
   reviews: [
     { platform: "Google", approved: false, quote: "", author: "", sourceUrl: "" },
     { platform: "Yelp", approved: false, quote: "", author: "", sourceUrl: "" },
     { platform: "Trustpilot", approved: false, quote: "", author: "", sourceUrl: "" }
+  ],
+  // "Find us online" links. A card appears only when its url is filled in (https only).
+  // Paste the Google Business Profile, Yelp and Trustpilot links here when available.
+  profiles: [
+    { platform: "Google", url: "", handle: "" },
+    { platform: "Yelp", url: "", handle: "" },
+    { platform: "Trustpilot", url: "", handle: "" },
+    { platform: "Facebook", url: "https://www.facebook.com/AquafeelSolutionsAZ", handle: "@AquafeelSolutionsAZ" },
+    { platform: "Instagram", url: "https://www.instagram.com/aquafeelsolutionsaz/", handle: "@aquafeelsolutionsaz" },
+    { platform: "TikTok", url: "https://www.tiktok.com/@aquafeelsolutionsaz", handle: "@aquafeelsolutionsaz" }
   ],
   videos: [
     // Both videos are spoken in Spanish with captions burned into the video. Vertical 9:16 phone recordings.
