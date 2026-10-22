@@ -6,15 +6,13 @@ window.AQUAFEEL_CONTENT = {
   // Approved review quotes only. Unapproved entries are no longer shown as "coming soon" placeholders.
   reviews: [
     { platform: "Google", approved: false, quote: "", author: "", sourceUrl: "" },
-    { platform: "Yelp", approved: false, quote: "", author: "", sourceUrl: "" },
     { platform: "Trustpilot", approved: false, quote: "", author: "", sourceUrl: "" }
   ],
   // "Find us online" review-site cards. Paste each profile link (https) into url to make
   // the card clickable with a "Read our reviews" link; without a url the card still shows.
   profiles: [
-    { platform: "Google", url: "" },
-    { platform: "Yelp", url: "" },
-    { platform: "Trustpilot", url: "" }
+    { platform: "Google", url: "https://share.google/8DIGaABlRHyvGZzhr" },
+    { platform: "Trustpilot", url: "https://www.trustpilot.com/review/aquafeelsolutionsarizona.com" }
   ],
   videos: [
     // Both videos are spoken in Spanish with captions burned into the video. Vertical 9:16 phone recordings.
