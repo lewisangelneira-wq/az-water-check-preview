@@ -10,9 +10,11 @@ window.AQUAFEEL_CONTENT = {
   ],
   // "Find us online" review-site cards. Paste each profile link (https) into url to make
   // the card clickable with a "Read our reviews" link; without a url the card still shows.
+  // rating/count are copied by hand from each profile; update them (and ratingsAsOf) when they change.
+  ratingsAsOf: { en: "October 2026", es: "octubre de 2026" },
   profiles: [
-    { platform: "Google", url: "https://share.google/8DIGaABlRHyvGZzhr" },
-    { platform: "Trustpilot", url: "https://www.trustpilot.com/review/aquafeelsolutionsarizona.com" }
+    { platform: "Google", url: "https://share.google/8DIGaABlRHyvGZzhr", rating: 5.0, count: 9 },
+    { platform: "Trustpilot", url: "https://www.trustpilot.com/review/aquafeelsolutionsarizona.com", rating: 4.3, count: 7 }
   ],
   videos: [
     // Both videos are spoken in Spanish with captions burned into the video. Vertical 9:16 phone recordings.
