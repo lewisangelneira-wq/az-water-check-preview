@@ -37,9 +37,12 @@ dialog:not([open]){display:none}.illustrated-stage{height:0;padding-top:56.25%;a
 @media(max-width:860px) and (min-width:601px){.review-grid>*{flex-basis:calc((100% - 16px) / 2)}}
 @media(max-width:600px){.review-grid{gap:10px}.review-grid>*{flex-basis:100%}.profile-card{padding:20px}.profile-brand{margin-bottom:6px}}
 @media(prefers-reduced-motion:reduce){.profile-card{transition:none}a.profile-card:hover{transform:none}}
+
+/* Star ratings on review-site cards (generic stars, values set in content.js). */
+.profile-rating{display:flex;align-items:center;gap:10px;margin-top:2px}.profile-score{font-size:2rem;font-weight:700;line-height:1;letter-spacing:-.03em;color:var(--ink)}.stars{position:relative;display:inline-block;font-size:1.35rem;line-height:1;letter-spacing:2px;color:#dcdde3;white-space:nowrap}.stars-fill{position:absolute;inset:0 auto 0 0;overflow:hidden;color:#f5b301}.profile-count{font-size:.9375rem;color:var(--muted);line-height:1.5}.ratings-note{text-align:center;margin-top:14px;font-size:.75rem;color:var(--muted)}
 </style>
-  <script src="content.js?v=20261027-video4" defer></script>
-  <script src="app.js?v=20261027-video4" defer></script>
+  <script src="content.js?v=20261027-ratings1" defer></script>
+  <script src="app.js?v=20261027-ratings1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-copy="skip">Skip to content</a>
@@ -55,7 +58,8 @@ dialog:not([open]){display:none}.illustrated-stage{height:0;padding-top:56.25%;a
     <div class="welcome wrap"><p class="welcome-kicker" data-copy="welcomeKicker">PROGRAM ELIGIBILITY</p><h1 data-copy="headline">Is your area part of the Aquafeel program?</h1><p class="welcome-copy" data-copy="intro">Your free in-home water test is the first step to see if your area qualifies. We check your zip code and your water quality before approving new households.</p><p class="welcome-details" data-copy="welcomeDetails">Free in-home water test · English & Español</p></div>
 <section class="section reviews-section wrap" aria-labelledby="reviews-title">
       <div class="section-heading"><h2 id="reviews-title" data-copy="reviewsTitle">Find us online</h2><p data-copy="reviewsIntro">Look us up on the review sites you already trust.</p></div>
-      <div class="review-grid" id="review-grid"><a class="profile-card" href="https://share.google/8DIGaABlRHyvGZzhr" target="_blank" rel="noopener noreferrer"><span class="profile-brand platform-google"><img src="assets/google-logo.png" alt="" width="140" height="44" decoding="async"><span class="sr-only">Google</span></span><span class="profile-line">Find us on Google</span><span class="profile-cta">Read our reviews<span aria-hidden="true">→</span><span class="sr-only"> (opens in a new tab)</span></span></a><a class="profile-card" href="https://www.trustpilot.com/review/aquafeelsolutionsarizona.com" target="_blank" rel="noopener noreferrer"><span class="profile-brand platform-trustpilot"><img src="assets/trustpilot-logo.svg" alt="" width="140" height="44" decoding="async"><span class="sr-only">Trustpilot</span></span><span class="profile-line">Find us on Trustpilot</span><span class="profile-cta">Read our reviews<span aria-hidden="true">→</span><span class="sr-only"> (opens in a new tab)</span></span></a></div>
+      <div class="review-grid" id="review-grid"><a class="profile-card" href="https://share.google/8DIGaABlRHyvGZzhr" target="_blank" rel="noopener noreferrer"><span class="profile-brand platform-google"><img src="assets/google-logo.png" alt="" width="140" height="44" decoding="async"><span class="sr-only">Google</span></span><span class="profile-rating" role="img" aria-label="Rated 5.0 out of 5"><span class="profile-score" aria-hidden="true">5.0</span><span class="stars" aria-hidden="true">★★★★★<span class="stars-fill" style="width:100%">★★★★★</span></span></span><span class="profile-count">9 reviews on Google</span><span class="profile-cta">Read our reviews<span aria-hidden="true">→</span><span class="sr-only"> (opens in a new tab)</span></span></a><a class="profile-card" href="https://www.trustpilot.com/review/aquafeelsolutionsarizona.com" target="_blank" rel="noopener noreferrer"><span class="profile-brand platform-trustpilot"><img src="assets/trustpilot-logo.svg" alt="" width="140" height="44" decoding="async"><span class="sr-only">Trustpilot</span></span><span class="profile-rating" role="img" aria-label="Rated 4.3 out of 5"><span class="profile-score" aria-hidden="true">4.3</span><span class="stars" aria-hidden="true">★★★★★<span class="stars-fill" style="width:86%">★★★★★</span></span></span><span class="profile-count">7 reviews on Trustpilot</span><span class="profile-cta">Read our reviews<span aria-hidden="true">→</span><span class="sr-only"> (opens in a new tab)</span></span></a></div>
+      <p class="ratings-note" id="ratings-note">Ratings as of October 2026.</p>
     </section>
 
     <section class="stories-section" aria-labelledby="stories-title">
