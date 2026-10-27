@@ -78,7 +78,9 @@
       if(!(ready && item.hideLabel)){const label=element('div','video-label');label.append(element('h3','',item.name || title),element('span','',item.language==='es'?'ES':'EN'));card.append(label);}if(!ready)card.append(element('p','illustration-note',t.videoHint));videos.append(card);
     });
     videos.classList.toggle('video-grid--single',videos.children.length===1);
-    videos.classList.toggle('video-grid--pair',videos.children.length===2 && [...videos.children].every(card=>card.classList.contains('video-card--portrait')));
+    const allPortrait=[...videos.children].every(card=>card.classList.contains('video-card--portrait'));
+    videos.classList.toggle('video-grid--pair',videos.children.length===2 && allPortrait);
+    videos.classList.toggle('video-grid--trio',videos.children.length===3 && allPortrait);
     videos.closest('section').hidden = !videos.children.length;
   }
 

@@ -19,7 +19,9 @@ window.AQUAFEEL_CONTENT = {
     // name is the accessible (screen reader) name; the visible label is hidden with hideLabel.
     { language: "es", approved: true, orientation: "portrait", hideLabel: true, name: "Testimonio en español (1)", src: "assets/testimonial-es.mp4", poster: "assets/testimonial-es-poster.jpg", captions: "" },
     // Original was a square file with black side bars; cropped to 9:16 to match the first video.
-    { language: "es", approved: true, orientation: "portrait", hideLabel: true, name: "Testimonio en español (2)", src: "assets/testimonial-es-2.mp4", poster: "assets/testimonial-es-2-poster.jpg", captions: "" }
+    { language: "es", approved: true, orientation: "portrait", hideLabel: true, name: "Testimonio en español (2)", src: "assets/testimonial-es-2.mp4", poster: "assets/testimonial-es-2-poster.jpg", captions: "" },
+    // Couple interview, spoken in Spanish with burned-in captions and question banners.
+    { language: "es", approved: true, orientation: "portrait", hideLabel: true, name: "Testimonio en español (3)", src: "assets/testimonial-es-3.mp4", poster: "assets/testimonial-es-3-poster.jpg", captions: "" }
   ],
   // Lewis owns the new GHL flow. Do not substitute the archived booking URL.
   booking: { approved: false, embedUrl: "" }
